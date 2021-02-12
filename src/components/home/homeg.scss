@@ -1,0 +1,306 @@
+// .Page {
+//   background-color: #ffffff;
+// }
+.title {
+  margin: 50px 80px 0 170px;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 2.3em;
+}
+.subtitle {
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  margin: 20px 80px 40px 170px;
+  letter-spacing: 1px;
+  max-width: 25%;
+  color: black;
+  opacity: 0.5;
+  font-weight: bolder;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+
+  #card1 {
+    background-color: lightseagreen;
+    height: 30vh;
+    width: 38vw;
+  }
+  #card2 {
+    background-color: black;
+    height: 42vh;
+    width: 18vw;
+  }
+  #card3 {
+    background-color: brown;
+    height: 42vh;
+    width: 18vw;
+  }
+  #card4 {
+    background-color: lightblue;
+    height: 42vh;
+    width: 18vw;
+    margin-top: -75px;
+  }
+  #card5 {
+    background-color: lightcoral;
+    height: 42vh;
+    width: 18vw;
+    margin-top: -75px;
+  }
+  #card6 {
+    background-color: lightblue;
+    height: 30vh;
+    width: 38vw;
+  }
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 20px 150px 40px 160px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.cards {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin: 10px 10px 10px 10px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 425px) {
+  .title {
+    margin: 20px 40px 0 20px;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+      sans-serif;
+    font-size: 1.5em;
+  }
+  .subtitle {
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+      sans-serif;
+    margin: 10px 0 10px 20px;
+    max-width: 80%;
+    color: black;
+    opacity: 0.5;
+    font-weight: bolder;
+    font-size: 0.7em;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Float four columns side by side */
+  .column {
+    width: 100%;
+    display: block;
+
+    #card1 {
+      background-color: lightseagreen;
+      height: 22vh;
+      width: 89vw;
+    }
+    #card2 {
+      background-color: black;
+      height: 22vh;
+      width: 89vw;
+    }
+    #card3 {
+      background-color: brown;
+      height: 22vh;
+      width: 89vw;
+    }
+    #card4 {
+      background-color: lightblue;
+      height: 22vh;
+      width: 89vw;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    #card5 {
+      background-color: lightcoral;
+      height: 22vh;
+      width: 89vw;
+      margin-top: 5px;
+    }
+    #card6 {
+      background-color: lightblue;
+      height: 22vh;
+      width: 89vw;
+      margin-top: 10px;
+    }
+  }
+  .row {
+    margin: 0px 0px 0px 9px;
+  }
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 1rem;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 425px) {
+  .title {
+    margin: 20px 40px 0 20px;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+      sans-serif;
+    font-size: 1.5em;
+  }
+  .subtitle {
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+      sans-serif;
+    margin: 10px 0 10px 20px;
+    max-width: 80%;
+    color: black;
+    opacity: 0.5;
+    font-weight: bolder;
+    font-size: 0.8em;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Float four columns side by side */
+  .column {
+    width: 100%;
+    display: block;
+
+    #card1 {
+      background-color: lightseagreen;
+      height: 22vh;
+      width: 89vw;
+    }
+    #card2 {
+      background-color: black;
+      height: 22vh;
+      width: 89vw;
+    }
+    #card3 {
+      background-color: brown;
+      height: 22vh;
+      width: 89vw;
+    }
+    #card4 {
+      background-color: lightblue;
+      height: 22vh;
+      width: 89vw;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    #card5 {
+      background-color: lightcoral;
+      height: 22vh;
+      width: 89vw;
+      margin-top: 5px;
+    }
+    #card6 {
+      background-color: lightblue;
+      height: 22vh;
+      width: 89vw;
+      margin-top: 10px;
+    }
+  }
+  .row {
+    margin: 0px 0px 0px 9px;
+  }
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 1rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .title {
+    margin: 25px 40px 10px 35px;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+      sans-serif;
+    font-size: 1.5em;
+  }
+  .subtitle {
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+      sans-serif;
+    margin: 15px 40px 10px 35px;
+    max-width: 80%;
+    color: black;
+    opacity: 0.5;
+    font-weight: bolder;
+    font-size: 0.8em;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Float four columns side by side */
+  .column {
+    width: 50%;
+    display: block;
+    float: left;
+
+    #card1 {
+      background-color: lightseagreen;
+      height: 48vh;
+      width: 93%;
+    }
+    #card2 {
+      background-color: black;
+      height: 48vh;
+      width: 93%;
+    }
+    #card3 {
+      background-color: brown;
+      height: 48vh;
+      width: 93%;
+    }
+    #card4 {
+      background-color: lightblue;
+      height: 48vh;
+      width: 93%;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    #card5 {
+      background-color: lightcoral;
+      height: 48vh;
+      width: 93%;
+      margin-top: 5px;
+    }
+    #card6 {
+      background-color: lightblue;
+      height: 48vh;
+      width: 93%;
+      margin-top: 5px;
+    }
+  }
+  .row {
+    margin: 0px 40px 0px 30px;
+  }
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 1rem;
+  }
+}

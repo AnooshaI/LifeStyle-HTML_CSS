@@ -1,0 +1,169 @@
+.content {
+  background-color: #ffffff;
+}
+.title {
+  margin: 50px 80px 0 160px;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 2.3em;
+}
+.subtitle {
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  margin: 20px 80px 40px 160px;
+  max-width: 25%;
+  color: black;
+  opacity: 0.5;
+  font-weight: bolder;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+
+  #card1 {
+    background-color: lightseagreen;
+    height: 30vh;
+    width: 32vw;
+  }
+  #card2 {
+    background-color: black;
+    height: 48vh;
+    width: 16vw;
+  }
+  #card3 {
+    background-color: brown;
+    height: 48vh;
+    width: 16vw;
+  }
+  #card4 {
+    background-color: lightblue;
+    height: 45vh;
+    width: 16vw;
+  }
+  #card5 {
+    background-color: lightcoral;
+    height: 45vh;
+    width: 16vw;
+  }
+  #card6 {
+    background-color: lightblue;
+    height: 30vh;
+    width: 32vw;
+  }
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 20px 150px 40px 160px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-radius: 1rem;
+}
+@media screen and (max-width: 425px) {
+  .title {
+    margin: 20px 40px 0 20px;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+      sans-serif;
+    font-size: 2em;
+  }
+  .subtitle {
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+      sans-serif;
+    margin: 10px 0 10px 20px;
+    max-width: 80%;
+    color: black;
+    opacity: 0.5;
+    font-weight: bolder;
+    font-size: 0.7em;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Float four columns side by side */
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+
+    #card1 {
+      background-color: lightseagreen;
+      height: 30vh;
+      width: 32vw;
+    }
+    #card2 {
+      background-color: black;
+      height: 48vh;
+      width: 16vw;
+    }
+    #card3 {
+      background-color: brown;
+      height: 48vh;
+      width: 16vw;
+    }
+    #card4 {
+      background-color: lightblue;
+      height: 45vh;
+      width: 16vw;
+    }
+    #card5 {
+      background-color: lightcoral;
+      height: 45vh;
+      width: 16vw;
+    }
+    #card6 {
+      background-color: lightblue;
+      height: 30vh;
+      width: 32vw;
+    }
+  }
+
+  /* Remove extra left and right margins, due to padding */
+  //   .row {
+  //     margin: 20px 150px 40px 160px;
+  //   }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 1rem;
+  }
+}
